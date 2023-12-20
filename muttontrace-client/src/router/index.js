@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Client from "../views/Client.vue";
 import UnsupportDevice from "../views/UnsupportDevice.vue";
+import InfoPage from "../views/InfoPage.vue";
+import SettingPage from "../views/SettingPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -20,6 +22,16 @@ const router = createRouter({
       path: "/unsupportdevice",
       name: "UnsupportDevice",
       component: UnsupportDevice,
+    },
+    {
+      path: "/infopage",
+      name: "InfoPage",
+      component: InfoPage,
+    },
+    {
+      path: "/settingpage",
+      name: "SettingPage",
+      component: SettingPage,
     },
   ],
 });
