@@ -30,13 +30,12 @@
         <!--  -->
         <!--  -->
         <!--  -->
-        <div class="w-full flex justify-center items-center">
+        <!-- <div class="w-full flex justify-center items-center">
             <button class="btn btn-info h-1/2 w-5/6 flex justify-center items-center">
-                <!-- <figure><img src="../assets/infoinput.svg" alt=""></figure> -->
                 录入信息
             </button>
-        </div>
-        <div class="divider">信息看板</div>
+        </div> -->
+        <div class="divider"></div>
         <!-- <button class="btn h-64 w-5/6 flex justify-center items-center">Button</button> -->
         <!--  -->
         <!--  -->
@@ -50,7 +49,7 @@
                     <h2 class="card-title">肉源信息</h2>
                     <p>羊肉供应链的各个阶段，包括养羊的农场、运输卡车、加工设施和零售店。</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">点击查看</button>
+                        <button class="btn btn-primary">扫码查看</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +58,7 @@
         <!--  -->
         <!--  -->
         <!--  -->
-        <div class="divider">财务看板</div>
+        <div class="divider"></div>
         <div class="w-full flex justify-center items-center">
             <div class="card w-5/6 bg-base-100 shadow-xl">
                 <figure><img src="../assets/finance.png" alt="Mutton Info" />
@@ -75,6 +74,10 @@
         </div>
         <!--  -->
         <!--  -->
+        <div class="divider"></div>
+        <br>
+        <br>
+        <br>
         <!--  -->
         <!--  -->
         <div class="btm-nav">
@@ -86,7 +89,7 @@
                 </svg>
                 <span class="btm-nav-label">主页</span>
             </button>
-            <button v-on:click="this.$router.push({ name: 'RulesPage' })">
+            <button v-on:click="this.$router.push({ name: 'InfoPage' })">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -94,7 +97,7 @@
                 </svg>
                 <span class="btm-nav-label">信息</span>
             </button>
-            <button v-on:click="this.$router.push({ name: 'SettingsPage' })">
+            <button v-on:click="this.$router.push({ name: 'SettingPage' })">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
