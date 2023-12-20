@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  client:
+    container_name: muttontrace-frontend
+    build: ./muttontrace-client
+    restart: always
+    ports:
+      - "8082:4173"
+    networks:
+      - muttontrace_net
+
+
+networks:
+  muttontrace_net:
