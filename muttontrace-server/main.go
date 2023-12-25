@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"mutton/testFunc"
 	"net/http"
 )
 
@@ -67,6 +68,7 @@ func setupRouter() *gin.Engine {
 }
 
 func main() {
+	testFunc.OutputStr()
 	r := setupRouter()
 	// Listen and Server in 0.0.0.0:8080
 	err := r.Run(":8080")
